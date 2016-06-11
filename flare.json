@@ -1,380 +1,303 @@
-{
- "name": "flare",
- "children": [
-  {
-   "name": "analytics",
-   "children": [
-    {
-     "name": "cluster",
-     "children": [
-      {"name": "AgglomerativeCluster", "size": 3938},
-      {"name": "CommunityStructure", "size": 3812},
-      {"name": "HierarchicalCluster", "size": 6714},
-      {"name": "MergeEdge", "size": 743}
-     ]
-    },
-    {
-     "name": "graph",
-     "children": [
-      {"name": "BetweennessCentrality", "size": 3534},
-      {"name": "LinkDistance", "size": 5731},
-      {"name": "MaxFlowMinCut", "size": 7840},
-      {"name": "ShortestPaths", "size": 5914},
-      {"name": "SpanningTree", "size": 3416}
-     ]
-    },
-    {
-     "name": "optimization",
-     "children": [
-      {"name": "AspectRatioBanker", "size": 7074}
-     ]
-    }
-   ]
-  },
-  {
-   "name": "animate",
-   "children": [
-    {"name": "Easing", "size": 17010},
-    {"name": "FunctionSequence", "size": 5842},
-    {
-     "name": "interpolate",
-     "children": [
-      {"name": "ArrayInterpolator", "size": 1983},
-      {"name": "ColorInterpolator", "size": 2047},
-      {"name": "DateInterpolator", "size": 1375},
-      {"name": "Interpolator", "size": 8746},
-      {"name": "MatrixInterpolator", "size": 2202},
-      {"name": "NumberInterpolator", "size": 1382},
-      {"name": "ObjectInterpolator", "size": 1629},
-      {"name": "PointInterpolator", "size": 1675},
-      {"name": "RectangleInterpolator", "size": 2042}
-     ]
-    },
-    {"name": "ISchedulable", "size": 1041},
-    {"name": "Parallel", "size": 5176},
-    {"name": "Pause", "size": 449},
-    {"name": "Scheduler", "size": 5593},
-    {"name": "Sequence", "size": 5534},
-    {"name": "Transition", "size": 9201},
-    {"name": "Transitioner", "size": 19975},
-    {"name": "TransitionEvent", "size": 1116},
-    {"name": "Tween", "size": 6006}
-   ]
-  },
-  {
-   "name": "data",
-   "children": [
-    {
-     "name": "converters",
-     "children": [
-      {"name": "Converters", "size": 721},
-      {"name": "DelimitedTextConverter", "size": 4294},
-      {"name": "GraphMLConverter", "size": 9800},
-      {"name": "IDataConverter", "size": 1314},
-      {"name": "JSONConverter", "size": 2220}
-     ]
-    },
-    {"name": "DataField", "size": 1759},
-    {"name": "DataSchema", "size": 2165},
-    {"name": "DataSet", "size": 586},
-    {"name": "DataSource", "size": 3331},
-    {"name": "DataTable", "size": 772},
-    {"name": "DataUtil", "size": 3322}
-   ]
-  },
-  {
-   "name": "display",
-   "children": [
-    {"name": "DirtySprite", "size": 8833},
-    {"name": "LineSprite", "size": 1732},
-    {"name": "RectSprite", "size": 3623},
-    {"name": "TextSprite", "size": 10066}
-   ]
-  },
-  {
-   "name": "flex",
-   "children": [
-    {"name": "FlareVis", "size": 4116}
-   ]
-  },
-  {
-   "name": "physics",
-   "children": [
-    {"name": "DragForce", "size": 1082},
-    {"name": "GravityForce", "size": 1336},
-    {"name": "IForce", "size": 319},
-    {"name": "NBodyForce", "size": 10498},
-    {"name": "Particle", "size": 2822},
-    {"name": "Simulation", "size": 9983},
-    {"name": "Spring", "size": 2213},
-    {"name": "SpringForce", "size": 1681}
-   ]
-  },
-  {
-   "name": "query",
-   "children": [
-    {"name": "AggregateExpression", "size": 1616},
-    {"name": "And", "size": 1027},
-    {"name": "Arithmetic", "size": 3891},
-    {"name": "Average", "size": 891},
-    {"name": "BinaryExpression", "size": 2893},
-    {"name": "Comparison", "size": 5103},
-    {"name": "CompositeExpression", "size": 3677},
-    {"name": "Count", "size": 781},
-    {"name": "DateUtil", "size": 4141},
-    {"name": "Distinct", "size": 933},
-    {"name": "Expression", "size": 5130},
-    {"name": "ExpressionIterator", "size": 3617},
-    {"name": "Fn", "size": 3240},
-    {"name": "If", "size": 2732},
-    {"name": "IsA", "size": 2039},
-    {"name": "Literal", "size": 1214},
-    {"name": "Match", "size": 3748},
-    {"name": "Maximum", "size": 843},
-    {
-     "name": "methods",
-     "children": [
-      {"name": "add", "size": 593},
-      {"name": "and", "size": 330},
-      {"name": "average", "size": 287},
-      {"name": "count", "size": 277},
-      {"name": "distinct", "size": 292},
-      {"name": "div", "size": 595},
-      {"name": "eq", "size": 594},
-      {"name": "fn", "size": 460},
-      {"name": "gt", "size": 603},
-      {"name": "gte", "size": 625},
-      {"name": "iff", "size": 748},
-      {"name": "isa", "size": 461},
-      {"name": "lt", "size": 597},
-      {"name": "lte", "size": 619},
-      {"name": "max", "size": 283},
-      {"name": "min", "size": 283},
-      {"name": "mod", "size": 591},
-      {"name": "mul", "size": 603},
-      {"name": "neq", "size": 599},
-      {"name": "not", "size": 386},
-      {"name": "or", "size": 323},
-      {"name": "orderby", "size": 307},
-      {"name": "range", "size": 772},
-      {"name": "select", "size": 296},
-      {"name": "stddev", "size": 363},
-      {"name": "sub", "size": 600},
-      {"name": "sum", "size": 280},
-      {"name": "update", "size": 307},
-      {"name": "variance", "size": 335},
-      {"name": "where", "size": 299},
-      {"name": "xor", "size": 354},
-      {"name": "_", "size": 264}
-     ]
-    },
-    {"name": "Minimum", "size": 843},
-    {"name": "Not", "size": 1554},
-    {"name": "Or", "size": 970},
-    {"name": "Query", "size": 13896},
-    {"name": "Range", "size": 1594},
-    {"name": "StringUtil", "size": 4130},
-    {"name": "Sum", "size": 791},
-    {"name": "Variable", "size": 1124},
-    {"name": "Variance", "size": 1876},
-    {"name": "Xor", "size": 1101}
-   ]
-  },
-  {
-   "name": "scale",
-   "children": [
-    {"name": "IScaleMap", "size": 2105},
-    {"name": "LinearScale", "size": 1316},
-    {"name": "LogScale", "size": 3151},
-    {"name": "OrdinalScale", "size": 3770},
-    {"name": "QuantileScale", "size": 2435},
-    {"name": "QuantitativeScale", "size": 4839},
-    {"name": "RootScale", "size": 1756},
-    {"name": "Scale", "size": 4268},
-    {"name": "ScaleType", "size": 1821},
-    {"name": "TimeScale", "size": 5833}
-   ]
-  },
-  {
-   "name": "util",
-   "children": [
-    {"name": "Arrays", "size": 8258},
-    {"name": "Colors", "size": 10001},
-    {"name": "Dates", "size": 8217},
-    {"name": "Displays", "size": 12555},
-    {"name": "Filter", "size": 2324},
-    {"name": "Geometry", "size": 10993},
-    {
-     "name": "heap",
-     "children": [
-      {"name": "FibonacciHeap", "size": 9354},
-      {"name": "HeapNode", "size": 1233}
-     ]
-    },
-    {"name": "IEvaluable", "size": 335},
-    {"name": "IPredicate", "size": 383},
-    {"name": "IValueProxy", "size": 874},
-    {
-     "name": "math",
-     "children": [
-      {"name": "DenseMatrix", "size": 3165},
-      {"name": "IMatrix", "size": 2815},
-      {"name": "SparseMatrix", "size": 3366}
-     ]
-    },
-    {"name": "Maths", "size": 17705},
-    {"name": "Orientation", "size": 1486},
-    {
-     "name": "palette",
-     "children": [
-      {"name": "ColorPalette", "size": 6367},
-      {"name": "Palette", "size": 1229},
-      {"name": "ShapePalette", "size": 2059},
-      {"name": "SizePalette", "size": 2291}
-     ]
-    },
-    {"name": "Property", "size": 5559},
-    {"name": "Shapes", "size": 19118},
-    {"name": "Sort", "size": 6887},
-    {"name": "Stats", "size": 6557},
-    {"name": "Strings", "size": 22026}
-   ]
-  },
-  {
-   "name": "vis",
-   "children": [
-    {
-     "name": "axis",
-     "children": [
-      {"name": "Axes", "size": 1302},
-      {"name": "Axis", "size": 24593},
-      {"name": "AxisGridLine", "size": 652},
-      {"name": "AxisLabel", "size": 636},
-      {"name": "CartesianAxes", "size": 6703}
-     ]
-    },
-    {
-     "name": "controls",
-     "children": [
-      {"name": "AnchorControl", "size": 2138},
-      {"name": "ClickControl", "size": 3824},
-      {"name": "Control", "size": 1353},
-      {"name": "ControlList", "size": 4665},
-      {"name": "DragControl", "size": 2649},
-      {"name": "ExpandControl", "size": 2832},
-      {"name": "HoverControl", "size": 4896},
-      {"name": "IControl", "size": 763},
-      {"name": "PanZoomControl", "size": 5222},
-      {"name": "SelectionControl", "size": 7862},
-      {"name": "TooltipControl", "size": 8435}
-     ]
-    },
-    {
-     "name": "data",
-     "children": [
-      {"name": "Data", "size": 20544},
-      {"name": "DataList", "size": 19788},
-      {"name": "DataSprite", "size": 10349},
-      {"name": "EdgeSprite", "size": 3301},
-      {"name": "NodeSprite", "size": 19382},
-      {
-       "name": "render",
-       "children": [
-        {"name": "ArrowType", "size": 698},
-        {"name": "EdgeRenderer", "size": 5569},
-        {"name": "IRenderer", "size": 353},
-        {"name": "ShapeRenderer", "size": 2247}
-       ]
-      },
-      {"name": "ScaleBinding", "size": 11275},
-      {"name": "Tree", "size": 7147},
-      {"name": "TreeBuilder", "size": 9930}
-     ]
-    },
-    {
-     "name": "events",
-     "children": [
-      {"name": "DataEvent", "size": 2313},
-      {"name": "SelectionEvent", "size": 1880},
-      {"name": "TooltipEvent", "size": 1701},
-      {"name": "VisualizationEvent", "size": 1117}
-     ]
-    },
-    {
-     "name": "legend",
-     "children": [
-      {"name": "Legend", "size": 20859},
-      {"name": "LegendItem", "size": 4614},
-      {"name": "LegendRange", "size": 10530}
-     ]
-    },
-    {
-     "name": "operator",
-     "children": [
-      {
-       "name": "distortion",
-       "children": [
-        {"name": "BifocalDistortion", "size": 4461},
-        {"name": "Distortion", "size": 6314},
-        {"name": "FisheyeDistortion", "size": 3444}
-       ]
-      },
-      {
-       "name": "encoder",
-       "children": [
-        {"name": "ColorEncoder", "size": 3179},
-        {"name": "Encoder", "size": 4060},
-        {"name": "PropertyEncoder", "size": 4138},
-        {"name": "ShapeEncoder", "size": 1690},
-        {"name": "SizeEncoder", "size": 1830}
-       ]
-      },
-      {
-       "name": "filter",
-       "children": [
-        {"name": "FisheyeTreeFilter", "size": 5219},
-        {"name": "GraphDistanceFilter", "size": 3165},
-        {"name": "VisibilityFilter", "size": 3509}
-       ]
-      },
-      {"name": "IOperator", "size": 1286},
-      {
-       "name": "label",
-       "children": [
-        {"name": "Labeler", "size": 9956},
-        {"name": "RadialLabeler", "size": 3899},
-        {"name": "StackedAreaLabeler", "size": 3202}
-       ]
-      },
-      {
-       "name": "layout",
-       "children": [
-        {"name": "AxisLayout", "size": 6725},
-        {"name": "BundledEdgeRouter", "size": 3727},
-        {"name": "CircleLayout", "size": 9317},
-        {"name": "CirclePackingLayout", "size": 12003},
-        {"name": "DendrogramLayout", "size": 4853},
-        {"name": "ForceDirectedLayout", "size": 8411},
-        {"name": "IcicleTreeLayout", "size": 4864},
-        {"name": "IndentedTreeLayout", "size": 3174},
-        {"name": "Layout", "size": 7881},
-        {"name": "NodeLinkTreeLayout", "size": 12870},
-        {"name": "PieLayout", "size": 2728},
-        {"name": "RadialTreeLayout", "size": 12348},
-        {"name": "RandomLayout", "size": 870},
-        {"name": "StackedAreaLayout", "size": 9121},
-        {"name": "TreeMapLayout", "size": 9191}
-       ]
-      },
-      {"name": "Operator", "size": 2490},
-      {"name": "OperatorList", "size": 5248},
-      {"name": "OperatorSequence", "size": 4190},
-      {"name": "OperatorSwitch", "size": 2581},
-      {"name": "SortOperator", "size": 2023}
-     ]
-    },
-    {"name": "Visualization", "size": 16540}
-   ]
-  }
- ]
+{"name": 0.0,
+"children": [
+	{"name": 0.0,
+	"children": [
+		{"name": 0.0,
+			{"name": 0.0
+			"children": [
+				{"name": 1347.8144687974388}
+				{"name": 1279.332165101584}
+				{"name": 1214.0105831147687}
+				{"name": 1175.0283487032818}
+				{"name": 1060.1887932748484}
+				{"name": 981.170750548862}
+				{"name": 933.7599249132701}
+				{"name": 908.4741512409544}
+				{"name": 903.2062817258886}
+				{"name": 832.6168302240075}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 1794.6833700719055}
+				{"name": 1349.1659466994715}
+				{"name": 1060.387062466593}
+				{"name": 839.0532465907357}
+				{"name": 815.3049830847425}
+				{"name": 793.4565806592286}
+				{"name": 776.3578309349135}
+				{"name": 760.209011750838}
+				{"name": 743.110262026523}
+				{"name": 678.5149852902211}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 1657.1088478204647}
+				{"name": 1618.0173746303653}
+				{"name": 1355.8745544144044}
+				{"name": 1070.736749968973}
+				{"name": 1047.7417657395029}
+				{"name": 1002.9015464920359}
+				{"name": 885.6271269217376}
+				{"name": 859.1828950578468}
+				{"name": 858.0331458463733}
+				{"name": 808.5939297530123}
+
+			]
+			}
+
+		}
+		{"name": 0.0,
+			{"name": 0.0
+			"children": [
+				{"name": 3953.177675144878}
+				{"name": 2842.761947648542}
+				{"name": 2016.420387952323}
+				{"name": 1320.0997597221012}
+				{"name": 1072.9983686421733}
+				{"name": 1063.1389615167898}
+				{"name": 953.4530572468964}
+				{"name": 894.2966144945945}
+				{"name": 893.0641886039215}
+				{"name": 888.1344850412296}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 2395.0004114704097}
+				{"name": 2025.3875848152763}
+				{"name": 1841.694463134261}
+				{"name": 1711.4393404877228}
+				{"name": 1567.8247180825654}
+				{"name": 1362.9790551170695}
+				{"name": 1236.0638074101862}
+				{"name": 1202.665058013638}
+				{"name": 1124.7346427550253}
+				{"name": 1100.24222653089}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 2028.711261856085}
+				{"name": 1595.847285051948}
+				{"name": 1334.6979436742452}
+				{"name": 1302.5014495317887}
+				{"name": 1140.3265160734893}
+				{"name": 1121.2471121372187}
+				{"name": 1109.3224846770497}
+				{"name": 1029.4274806939168}
+				{"name": 976.9591198691729}
+				{"name": 974.5741943771392}
+
+			]
+			}
+
+		}
+		{"name": 0.0,
+			{"name": 0.0
+			"children": [
+				{"name": 3475.674125920704}
+				{"name": 2914.8444861063617}
+				{"name": 2621.747588916957}
+				{"name": 2221.557594677577}
+				{"name": 1987.6437248052634}
+				{"name": 1869.2776701710807}
+				{"name": 1435.268803179077}
+				{"name": 1336.630424317258}
+				{"name": 1314.0845091488422}
+				{"name": 1280.2656363962185}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 2760.8838413219128}
+				{"name": 1656.9738772758678}
+				{"name": 1491.743482657363}
+				{"name": 1403.4306855336795}
+				{"name": 1242.473490775998}
+				{"name": 1139.9166941162364}
+				{"name": 1027.3890977812202}
+				{"name": 987.5058990802019}
+				{"name": 960.4422999616537}
+				{"name": 934.8031007967132}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 3259.7041049980276}
+				{"name": 2159.0965227074385}
+				{"name": 1922.2784825551291}
+				{"name": 1591.755462486438}
+				{"name": 1428.1976793596634}
+				{"name": 1409.456683376387}
+				{"name": 1394.1231412082518}
+				{"name": 1383.9007797628285}
+				{"name": 1348.1225147038465}
+				{"name": 1102.7858400136843}
+
+			]
+			}
+
+		}
+
+		]
+	}
+	{"name": 0.0,
+	"children": [
+		{"name": 0.0,
+			{"name": 0.0
+			"children": [
+				{"name": 11694.07428961856}
+				{"name": 6149.103572270701}
+				{"name": 3847.1346605387303}
+				{"name": 3509.7125073532634}
+				{"name": 2981.0844673626966}
+				{"name": 2643.662314177229}
+				{"name": 2025.0550333372041}
+				{"name": 1760.7410133419207}
+				{"name": 1481.4304532050612}
+				{"name": 1361.4581320724503}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 4899.274956375591}
+				{"name": 4714.984513642259}
+				{"name": 4363.3628713719145}
+				{"name": 3541.4048844569966}
+				{"name": 3133.252431532257}
+				{"name": 3090.289015434916}
+				{"name": 2673.091632805473}
+				{"name": 2536.287071021835}
+				{"name": 2433.400995630834}
+				{"name": 2137.1795478017993}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 5734.940776665858}
+				{"name": 4348.523327060076}
+				{"name": 4218.642756670177}
+				{"name": 3500.0727370574236}
+				{"name": 2533.2694379420823}
+				{"name": 2447.9632644907288}
+				{"name": 2209.7207980950566}
+				{"name": 1990.6914338280678}
+				{"name": 1787.0325512640254}
+				{"name": 1738.6155338997437}
+
+			]
+			}
+
+		}
+		{"name": 0.0,
+			{"name": 0.0
+			"children": [
+				{"name": 4377.025026731986}
+				{"name": 3643.4201599303365}
+				{"name": 3145.273623739696}
+				{"name": 3041.960274594049}
+				{"name": 2627.105120660365}
+				{"name": 2425.283694422357}
+				{"name": 2199.435907917919}
+				{"name": 2166.599882220465}
+				{"name": 1991.2074522755295}
+				{"name": 1626.0067762258004}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 4035.4284912391236}
+				{"name": 3195.0624813772424}
+				{"name": 3064.893428485314}
+				{"name": 2245.4354012122913}
+				{"name": 1891.3485993041952}
+				{"name": 1753.760584848478}
+				{"name": 1696.432245491929}
+				{"name": 1632.359395622845}
+				{"name": 1570.9843499587753}
+				{"name": 1297.157223149848}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 3304.520175911942}
+				{"name": 3116.853546397787}
+				{"name": 3043.195995564586}
+				{"name": 2320.71149695719}
+				{"name": 2202.8594156240683}
+				{"name": 1903.7457091970703}
+				{"name": 1798.7036367045057}
+				{"name": 1739.777596037945}
+				{"name": 1725.6865863133328}
+				{"name": 1400.9528622052212}
+
+			]
+			}
+
+		}
+		{"name": 0.0,
+			{"name": 0.0
+			"children": [
+				{"name": 1958.064346037598}
+				{"name": 1619.6801476108706}
+				{"name": 1430.6207943232102}
+				{"name": 1271.0418825651516}
+				{"name": 1256.942540964038}
+				{"name": 1246.0475951813592}
+				{"name": 1219.1306703065059}
+				{"name": 1190.9319871042785}
+				{"name": 1029.4304378551585}
+				{"name": 1028.7895586914717}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 4340.203052642687}
+				{"name": 1812.4721646679673}
+				{"name": 1786.585764007985}
+				{"name": 1556.6536169693209}
+				{"name": 1439.4034492741077}
+				{"name": 1268.8577508083436}
+				{"name": 1258.1986446542332}
+				{"name": 1150.0848536625433}
+				{"name": 1029.7892270661562}
+				{"name": 1020.652850362633}
+
+			]
+			}
+			{"name": 0.0
+			"children": [
+				{"name": 3654.879023848034}
+				{"name": 2518.09910325049}
+				{"name": 2286.080545237905}
+				{"name": 1969.6916024934717}
+				{"name": 1664.4040261611233}
+				{"name": 1557.8309086051033}
+				{"name": 1318.0413941040588}
+				{"name": 1121.5472086101472}
+				{"name": 1029.4058673898385}
+				{"name": 1029.4058673898385}
+
+			]
+			}
+
+		}
+
+		]
+	}
+
+	]
 }
