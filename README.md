@@ -1,11 +1,13 @@
 # sbtvisualization
 
- put model file in this folder, the name of model in this file is smalltrain.model\
+ Put model file in this folder, the name of model in this file is smalltrain.model\
  
- run:
+ Run:
  
  java -jar sbt.jar wordreps smalltrain.model sbt.json
  
- then you could see the sbt visualization in index
+ Then you could see the sbt visualization in index
  
- the result of our example is in http://hermannity.github.io/sbtvisualization/
+ The result of our example is in:
+ 
+ http://hermannity.github.io/sbtvisualization/
