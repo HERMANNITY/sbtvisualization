@@ -11,3 +11,5 @@
  The result of our example is in:
  
  http://hermannity.github.io/sbtvisualization/
+ 
+ The name of internal node is the discount(Why it is 0?), the name of the leaf node is the ID of words.
